@@ -24,12 +24,13 @@ int main ()
 int main ()
 {
    float matrx [50][50];
-   float *p;
+   float *p; // Ponteiro = endereço de Memória
    int count;
-   p=matrx[0];
+   p=matrx[0]; // Copiando a Posição (Endereço) Inicial da Matriz
    for (count=0;count<2500;count++) {
-       *p=0.0;
-       p++;
+       *p=0.0; // Dado
+       p++; // Endereço da Memória
+       printf("%ld\n", p);
    }
    return(0);
 }
