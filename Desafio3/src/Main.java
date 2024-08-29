@@ -20,8 +20,8 @@ public class Main {
             Tasks tasks = operacaoX.pop();
 
            switch (tasks.getEquipe()){
-               case "B" -> equipeA.add(tasks);
-               case "A" -> equipeB.add(tasks);
+               case "B" -> equipeB.add(tasks);
+               case "A" -> equipeA.add(tasks);
                case "X" -> {
                    if(equipeA.size() == equipeB.size()){
                        operacaoX.remove(tasks);
